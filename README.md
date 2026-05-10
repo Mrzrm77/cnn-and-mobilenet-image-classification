@@ -49,4 +49,53 @@ This project aims to classify images into different categories using the Intel I
 *   **MobileNetV2 Superiority:** The MobileNetV2 model, leveraging transfer learning, demonstrated significantly better performance with a higher test accuracy (90.10%) and lower test loss compared to the custom CNN model (84.07%). This highlights the effectiveness of pre-trained models for image classification tasks, especially when data might be limited or computational resources are constrained.
 *   **Model Saving:** Both trained models (`cnn_model.keras` and `mobilenet_model.keras`) were saved to Google Drive for future use, demonstrating the process of persisting trained models.
 
+Here all result
+## CNN Model Result
+
+| Class      | Precision | Recall | F1-Score | Support |
+|------------|-----------|--------|----------|---------|
+| buildings  | 0.86 | 0.76 | 0.81 | 437 |
+| forest     | 0.93 | 0.98 | 0.96 | 474 |
+| glacier    | 0.82 | 0.79 | 0.80 | 553 |
+| mountain   | 0.77 | 0.81 | 0.79 | 525 |
+| sea        | 0.88 | 0.79 | 0.83 | 510 |
+| street     | 0.81 | 0.91 | 0.86 | 501 |
+
+### Overall Metrics
+
+| Metric | Score |
+|--------|------|
+| Accuracy | 0.84 |
+| Macro Avg Precision | 0.84 |
+| Macro Avg Recall | 0.84 |
+| Macro Avg F1-Score | 0.84 |
+| Weighted Avg Precision | 0.84 |
+| Weighted Avg Recall | 0.84 |
+| Weighted Avg F1-Score | 0.84 |
+| Total Support | 3000 |
+
+## Mobilenet Model Result
+
+| Class      | Precision | Recall | F1-Score | Support |
+|------------|-----------|--------|----------|---------|
+| buildings  | 0.93 | 0.89 | 0.91 | 437 |
+| forest     | 0.99 | 0.99 | 0.99 | 474 |
+| glacier    | 0.85 | 0.83 | 0.84 | 553 |
+| mountain   | 0.83 | 0.83 | 0.83 | 525 |
+| sea        | 0.94 | 0.93 | 0.93 | 510 |
+| street     | 0.90 | 0.96 | 0.92 | 501 |
+
+### Overall Metrics
+
+| Metric | Score |
+|--------|------|
+| Accuracy | 0.90 |
+| Macro Avg Precision | 0.90 |
+| Macro Avg Recall | 0.90 |
+| Macro Avg F1-Score | 0.90 |
+| Weighted Avg Precision | 0.90 |
+| Weighted Avg Recall | 0.90 |
+| Weighted Avg F1-Score | 0.90 |
+| Total Support | 3000 |
+
 In conclusion, this project successfully implemented and compared two image classification approaches on the Intel Image Classification dataset. The transfer learning approach with MobileNetV2 proved to be more effective, achieving high accuracy in categorizing environmental images.
